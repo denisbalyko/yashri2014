@@ -1,0 +1,127 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body{
+    height: 100%;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+#buttons_panel{
+	margin-top: 200px;
+	text-align: center;
+}
+
+.popup_overlay.margin {
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	background-color: black;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+	-moz-opacity: 0.20;
+	-khtml-opacity: 0.20;
+	opacity: 0.20;
+	background-position: initial;
+	background-repeat: initial;
+}
+
+.popup_overlay.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 100;
+	background-color: black;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+	-moz-opacity: 0.20;
+	-khtml-opacity: 0.20;
+	opacity: 0.20;
+	background-position: initial;
+	background-repeat: initial;
+}
+
+.popup_window {
+	display: none;
+	width: 300px;
+	border: 4px solid #f1f1f1;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	background: #FFF;
+}
+
+.popup_window.margin {
+	position: fixed;
+	z-index: 101;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	height: 300px;
+	margin-top: -150px;
+}
+
+.popup_window.flex {
+	z-index: 1000;
+	position: relative;
+	flex: 1 1 400px;
+}
+
+.popup_window .popup_close {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	width: 16px;
+	height: 16px;
+	color: #FFF;
+	opacity: 0.8;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	border-radius: 100%;
+	cursor: pointer;
+	background: #ccc;
+}
+
+.popup_window .popup_content {
+	padding: 15px;
+}
+
+.popup_window .popup_close:after{
+	display: block;
+	width: 16px;
+	height: 16px;
+	content: "x";
+	color: #FFF;
+	text-align: center;
+}
+
+.popup_window .popup_close:hover {opacity: 1;}
+.popup_window .popup_close:active {opacity: 0.9;}
